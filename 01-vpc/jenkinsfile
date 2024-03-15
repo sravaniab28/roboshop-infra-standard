@@ -6,7 +6,9 @@ pipeline {
             steps {
                 
                 sh '''  
-                 echo "terraform init"
+                  ls -ltr
+                  pwd
+                  echo "terraform init"
             
                 '''
 
@@ -15,8 +17,10 @@ pipeline {
         stage('plan') {
             steps {
                 sh '''
-                echo "terraform plan"
-                
+                  ls -ltr
+                  pwd
+                  echo "terraform plan"
+
                 '''
             }
         }
